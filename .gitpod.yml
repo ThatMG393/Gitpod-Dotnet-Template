@@ -2,6 +2,3 @@ image:
   file: Dockerfile
 ports:
   - port: 6080
-tasks:
-  - init: sudo
-    command: apt install gradle && gradle init
