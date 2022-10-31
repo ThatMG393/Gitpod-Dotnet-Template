@@ -9,5 +9,4 @@ RUN sudo apt-get update \
     && sudo rm -rf /tmp/* \
     && curl -sSL https://dot.net/v1/dotnet-install.sh | sudo bash /dev/stdin --channel LTS --runtime dotnet --os linux --version 6.0.10 \
     && export DOTNET_ROOT=$HOME/.dotnet \
-    && export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools \
-    && source ~/.bashrc
+    && export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
